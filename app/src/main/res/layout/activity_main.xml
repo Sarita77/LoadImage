@@ -4,21 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <EditText
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+  >
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:id="@+id/rdogrp"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/rdoDaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dayahang"/>
+        <RadioButton
+            android:id="@+id/rdoRajesh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Rahesh"/>
+        <RadioButton
+            android:id="@+id/rdoBhuwan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bhuwan"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgHero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"/>
+
 
 </LinearLayout>
+
